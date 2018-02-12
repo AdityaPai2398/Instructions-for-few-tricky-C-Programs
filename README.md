@@ -1,5 +1,5 @@
 # Instructions-for-few-tricky-C-Programs
-Some decriptions to keep in mind while analysing crypto/trick c programs
+Some descriptions to keep in mind while analysing crypto/tricky c programs
 
 1) Else without a previous if
    Use flower brackets; there can't be a block of code that is not contained in an if befoe an else.
@@ -10,11 +10,11 @@ Some decriptions to keep in mind while analysing crypto/trick c programs
 3) Switch takes only  integer and characters
    As characters are integers in ascii format
    
-4) For loop with a semi colon at the end of it does not execute the statements within it's block.
+4) For loop with a semi colon at the end of it does not execute the statements within it's block.It executes only wgen condition no longer holds good.
 
-5) Else if is true for integers except 0 (even negative numbers work).
+5) Else if is true for all integers except 0 (even negative numbers work).
 
-6) Duplicate case values not allowed
+6) Duplicate case values not allowed in switch statemebts 
 
 7) #ifdef INDIA 
        //block of code 
