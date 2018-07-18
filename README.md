@@ -34,4 +34,11 @@ Some descriptions to keep in mind while analysing crypto/tricky c programs
    printf(p,65); //equivalent to printf("%c",65); output is A //ascci 65 is A
    
 10)Cannot access address of a variable which is a register.
-   
+
+11)A structure variable can be assigned to other using =, but cannot be compared with other using ==
+
+12)A structure cannot contain a member of its own type because if this is allowed then it becomes impossible for compiler to know size of such struct. Although a pointer of same type can be a member because pointers of all types are of same size and compiler can calculate size of struct
+
+13)Memory allocated for the union is equal to memory needed for the largest member of it, and all members share this same memory space.
+
+14)In C, struct and union types cannot have static members. In C++, struct types are allowed to have static members, but union cannot have static members in C++ also.
