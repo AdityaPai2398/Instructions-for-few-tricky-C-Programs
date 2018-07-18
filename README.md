@@ -2,7 +2,7 @@
 Some descriptions to keep in mind while analysing crypto/tricky c programs
 
 1) Else without a previous if
-   Use flower brackets; there can't be a block of code that is not contained in an if befoe an else.
+   Use flower brackets; there can't be a block of code that is not contained in an if before an else.
    
 2) #define and precedence
    Be careful when replacing the preprocessor don't forget about the rules of precedence.
