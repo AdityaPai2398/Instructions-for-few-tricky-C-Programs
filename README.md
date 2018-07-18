@@ -42,3 +42,9 @@ Some descriptions to keep in mind while analysing crypto/tricky c programs
 13)Memory allocated for the union is equal to memory needed for the largest member of it, and all members share this same memory space.
 
 14)In C, struct and union types cannot have static members. In C++, struct types are allowed to have static members, but union cannot have static members in C++ also.
+
+15)Deep copies are more expensive, due to needing to create additional objects, and can be substantially more complicated, due to references possibly forming a complicated graph.
+
+16)What is designated Initialization?
+Designated Initialization allows structure members to be initialized in any order. This feature has been added in C99 standard.
+struct Point p2 = {.x = 20}; This feature is not available in C++ and works only in C.
